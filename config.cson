@@ -1,0 +1,34 @@
+"*":
+  core:
+    disabledPackages: [
+      "jshint"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      "*.spec.ts"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "seti-ui"
+      "monokai-blackboard"
+    ]
+    warnOnLargeFileLimit: 1
+  "custom-title":
+    template: "<%= fileName %> - Project: <%= projectName %> <% if (relativeFilePath) { %>- <%= relativeFilePath %> <% } %> - [<%= gitHead %>]"
+  editor:
+    fontSize: 12
+  "exception-reporting":
+    userId: "b7d19584-16db-4044-8c21-95673f09224e"
+  "linter-ui-default":
+    panelHeight: 222
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
