@@ -1,8 +1,8 @@
-# @anazard's atom settings
+# my atom settings
 
-### Generating an updated list
+### Generating the list of packages
 
-cd into `/Users/username/.atom`
+cd into `/Users/username/.atom` (for mac users)
 
 run `apm list --installed --bare > package-list.txt`
 
