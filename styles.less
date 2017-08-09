@@ -1,32 +1,88 @@
-/*
- * Your Stylesheet
- *
- * This stylesheet is loaded when Atom starts up and is reloaded automatically
- * when it is changed and saved.
- *
- * Add your own CSS or Less to fully customize Atom.
- * If you are unfamiliar with Less, you can read more about it here:
- * http://lesscss.org
- */
+// /*
+//  * Your Stylesheet
+//  *
+//  * This stylesheet is loaded when Atom starts up and is reloaded automatically
+//  * when it is changed and saved.
+//  *
+//  * Add your own CSS or Less to fully customize Atom.
+//  * If you are unfamiliar with Less, you can read more about it here:
+//  * http://lesscss.org
+//  */
+//
+//
+// /*
+//  * Examples
+//  * (To see them, uncomment and save)
+//  */
+//
+// // style the background color of the tree view
+// .tree-view {
+//   // background-color: whitesmoke;
+// }
+//
+// // style the background and foreground colors on the atom-text-editor-element itself
+// atom-text-editor {
+//   // color: white;
+//   // background-color: hsl(180, 24%, 12%);
+// }
+//
+// // style UI elements inside atom-text-editor
+// atom-text-editor .cursor {
+//   // border-color: red;
+// }
 
-
-/*
- * Examples
- * (To see them, uncomment and save)
- */
-
-// style the background color of the tree view
-.tree-view {
-  // background-color: whitesmoke;
-}
-
-// style the background and foreground colors on the atom-text-editor-element itself
-atom-text-editor {
-  // color: white;
-  // background-color: hsl(180, 24%, 12%);
-}
-
-// style UI elements inside atom-text-editor
-atom-text-editor .cursor {
-  // border-color: red;
-}
+// @bg: rgb(11, 11, 11);
+// @bg: black;
+//
+// /*
+//  * Examples
+//  * (To see them, uncomment and save)
+//  */
+//  // style the background color of the tree view
+//  .tree-view {
+//    // background-color: whitesmoke;
+//    background-color: @bg;
+//  }
+//
+//  // style the background and foreground colors on the atom-text-editor-element itself
+//  atom-text-editor {
+//    background-color: @bg;
+//    // color: white;
+//    // background-color: hsl(180, 24%, 12%);
+//  }
+//
+//  // style UI elements inside atom-text-editor
+//  atom-text-editor .cursor {
+//    border-color: rgb(20, 255, 0);
+//    border-width: thin;
+//  }
+//  atom-text-editor::shadow .gutter {
+//      background-color: @bg;
+//  }
+//  atom-text-editor::shadow .gutter .line-number {
+//      background-color: @bg;
+//  }
+//
+//  .selected:before {
+//    background-color: rgb(40, 40, 40) !important;
+//  }
+//  .scrollbars-visible-always /deep/ ::-webkit-scrollbar-thumb {
+//      background: rgba(255, 255, 255, 0.1);
+//  }
+//
+// .popover-list, .select-list, .autocomplete-suggestion-list {
+//   border: none !important;
+//   box-shadow: none;
+// }
+//
+// .select-list.popover-list {
+//   box-shadow: none;
+// }
+//
+// .tab.modified:not(:hover) > .close-icon {
+//   border: 2px solid #cbcb41;
+// }
+//
+// atom-text-editor::shadow .lines .line.cursor-line {
+//   background-color: rgba(255, 255, 255, 0.1);
+// }

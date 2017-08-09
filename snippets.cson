@@ -19,3 +19,58 @@
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+'.source.gfm':
+  'API Endpoint':
+    'prefix': 'endpoint'
+    'body': """
+    ## ${1:Name}
+
+
+
+    > Sample request
+
+    ```javascript
+
+    ```
+
+    > Sample response
+
+    ```javascript
+
+    ```
+
+    ### HTTP Request
+
+    `${2:GET} /${3}/`
+
+    ### Query Parameters
+
+    | Name         | Type    |
+    |--------------|---------|
+    | **Required** |         |
+    | id           | integer |
+
+    ### Body
+
+
+
+    ### Response
+    """
+
+  'Timestamp':
+    'prefix': 'stamp'
+    'body': '"2017-05-30 15:27:14"'
+
+  'Query Params':
+    'prefix': 'qparams',
+    'body': """
+    | Name         | Type    |
+    |--------------|---------|
+    | **Required** |         |
+    | id           | integer |
+    """
+
+  'DESC Replace':
+    'prefix': 'sreplace'
+    'body': 'Replaces the parameters of an existing ${4}, or creates a new one if the given id cannot be found.'

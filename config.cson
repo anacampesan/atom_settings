@@ -1,18 +1,14 @@
 "*":
+  "atom-material-ui":
+    colors:
+      abaseColor: "#087fd2"
   core:
     disabledPackages: [
       "jshint"
+      "linter-htmlhint"
+      "linter-tslint"
     ]
-    ignoredNames: [
-      ".git"
-      ".hg"
-      ".svn"
-      ".DS_Store"
-      "._*"
-      "Thumbs.db"
-      "desktop.ini"
-      "*.spec.ts"
-    ]
+    excludeVcsIgnoredPaths: false
     telemetryConsent: "no"
     themes: [
       "seti-ui"
@@ -22,13 +18,31 @@
   "custom-title":
     template: "<%= fileName %> - Project: <%= projectName %> <% if (relativeFilePath) { %>- <%= relativeFilePath %> <% } %> - [<%= gitHead %>]"
   editor:
-    fontSize: 12
+    fontSize: 11
+    softWrap: true
   "exception-reporting":
     userId: "b7d19584-16db-4044-8c21-95673f09224e"
+  "goto-definition":
+    performanceMode: true
   "linter-ui-default":
-    panelHeight: 222
+    panelHeight: 36
+  "markdown-preview": {}
+  minimap:
+    adjustAbsoluteModeHeight: true
+    plugins:
+      bookmarks: true
+      bookmarksDecorationsZIndex: 0
+  "scope-inspector":
+    showSidebar: false
+    userId: "9bfea4c662d849ef85600ac699bdf8972f89c67e"
   "tree-view":
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
+    hideVcsIgnoredFiles: false
   welcome:
     showOnStartup: false
+".blade.html.php.text":
+  editor:
+    commentEnd: " --}}"
+    commentStart: "{{-- "
+"linter-php":
+  executablePath: "/usr/bin/php"
